@@ -1,43 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<html xmlns="http://www.w3.org/1999/xhtml">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+<head>
+  <title>
+    Roullete Game
+  </title>
+  <link rel='stylesheet' href='styles.css'>
+  <script src='script.js'></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+</head>
+
+<body>
+
+  <form onsubmit="return false;"> <!-- Prevent form submission -->
+    <div class="aspNetHidden">
+      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+        value="vBbiWAS4mn2/zMwZAgQAVNbl6Ip3xjxObbhio6eGdwhnio4hDyRx0Q5FB7DPU6UYYnoBmvdnGGFLQdiS/lBkyYLj298dVBRkIcqonB9fB0UeiLejfrgpGSOx2j0miIwexl6PSaw+NwysgfH8nUIX5XdtUhYF3wOFUPTwGkOwbNR/fhGMMVC6cRJDrNP2ti0zeGYH4IWHOLPWLOGGPNK0lpUbqsCJUJP/L1Np9Eooyp9vFV96fHjJ4yqCaaCKNQLmsPblhulzb4FORm7wVTYJL3g9l9SLMiL1K6MozImuV5N1/HEooIeenSmbPh7rHZD86LiOYX5K4XS5Ct93EwTXbj5KTf2lQpSCH2er5RJwQPAm99PD4Dd0sH1S4pvF9w/TUbo30musiHqQuWzac9k+E5n+TgqcaDyIVhBg9TFTh6DA6qSxC3wUnBqNoiVoA5R1vzN33C3hkZWnACp8+RCRFpv9dRfCKcplAsQTCHrLbmF9PmsfvjF/xlCZbS9qtu9GV7xqObOrp32+rxq2tFMROfADIXkLdHE0Oob8O+uQocw251PvDrqZSj85GJIbBxp3SdwXiHY2NYV1iD0NcONf+uhXUbciFEKT749ECDeA6tuRcqtabA6FThPdMS1RvpWxehjexxFM9S/fwh2uKjQ9pW9NisoS3GjdzTeGm+moSJyn5ZiOaUh3TRVhMj/CZ7PpJyvWSuzzp/vS5tyWPPJxYuN6hIn/zqx0DuaHQFcyG7aNx9cY4I12cUKl6DUg9nQd0mIJKPKrdHhXluQ7SKrPpDGSYhNNRNGVdN5V4XkeraQ3OVFPVh0TUgeSvm0GbkXTF6sxKwcksp6xNK2k0g63oWhv3EkQ+w/qZQUCUOuEuVLF+IXv/HdGhOxCORDk1HQoANH6NOltItnKCISXQTpSn6BUiNHx3dEQJn5MzzjvHl7NwYJXFn5bHOHaNdL9B59yP3ui65id4876RuU/0GzyHUeX4wPndHkJXp17c/eq262PbQNdPUSm4sTbD8z+dxY+mLFQoDGqAdr85Rw9Ssy1b7uEssfbw6Z8q1xcGTYgQZKHThnk31HhN2eL2EVVBsJxdVL+FNLK74wI7aPUBVf7/gelQ9qw2W5SKI3Tnf2ie03KaNhv9DD8jyMqfb+nXaLC/f8AbZNr2Etgf9zR8CNawRFj7mtTiBa8ve1/B8OR+LhKSu+QaFbc2c2aE4MauWyR3rWdvl8dyuizo1xGP7QbH/38b7JTKiNtwfAukjrlUHoehV913h0lBcwFnG4kvE4ChyZH0m1xdHWzByhQmN6tgg==" />
+    </div>
+
+    <div class="aspNetHidden">
+
+      <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B6E7D48B" />
+      <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+        value="4U7oLrGSrObjR65oIXSEifHIsvPUgZTJsOWNajt2AResTIkWOSUr9klzOvLtIv0sXspKRkIf3+mRdRpG6D9fVA0DV7WSe/FN8CcDANmccKmwSNrnirNwY/GPYO/nRHSpDZ/kFKkLVedhMF3mv8Sii7Lw9+xQgdPEwDeJY8wZdEQuVqpR8lfJgU8oDxfBFzhLlcPWY5oxF0OG+vpHdWy53f9/0wSv78DPR/X/dB5o+4nrC3FWUinuKbVvGDjOhUhnKP0aTjFWWEZYXs7CwenTN/ZPg8WeY7NSRYZ5E8c2N9xJricDiLgfVcYhoEK0yITLj/PFojKj+XvoSco/F9ZRIArbDMqwsqXCDW9I0XanPDIff2glHZn3tSxF88y5jh7cz/ys0wDp9OsO+yT3LjjG4UdunmWgMEwN/1FZ+WcP3FCMJvssjuYeWpw++VD6m54e7U04kBW6ev1owcZ4wYdGPRTafUOtAEvfpCJgR4I3enVOlnokbuXLZp+MgLrkAtXlo+r065ToFiDy8bVAOI5mZbZidfHkS9P3nAhn1rO+OuZlZ/Y+YIbsuTSaezIurOjZ9HBXACgWNG23c7hJ5tXRoYK4anhYlnly2RhJyuUQwWA4CEO/QYKGCDfSbCbO8SMJI2z2QBfPXXPdCnltV57EeHyLII1gK3z6tGu6pmRZH4lrLcRazk31macuuVAUOugEeCRoVo81AvZcCkXv1+iZoI+c4ufyepi6EKNyJ7COWgjoEHdOkno3E8bxo5Dbwbfhl0kk/YTFtGOxifl0dj8OTXOx7ET4g2afGfv6lD/mnaE11cyINLWtm8KUKKhdzTD3Fe+CucB8PWMWBq33QGA3v3rTG5pAJFRf+5a8WKelYfVCyGPpmpEoUBa/7zbHURAUQ06jHslqmVVrkpHaFrktOWGOWeRWkVwzC4LhRqSJeG7cWj7X4y9lFhFRHssY4P1bw1I1lEyUwuKZ9TyIwRTV3n5y4/BUNcOD5DW6SlGV8wk2Mnc2yU3doEG0R7jKRj13uf29iQ3td6vvTj36JynAbTE1K1SHJNbwVSHV0OKXhDY7tfOoQXFjVwHggTXdYTqL4omZyorNaL9Zq3qjN9FvJZbZBqd+d7A4WIGD1T4cfHEVEa9MW+qVJFa5yz35YvW/Oebk8kSRm2IsLOgT1fDDW/IJpukqN0p06QAFfVbLbb5e/hjccZap1OK/Ek7UwMhA31B3ur47IVrdHYNbpS9DFJZezhIQyzsgC0FPXWzenNR6LmnMsCZv87koMibKVImTNwsc2JK6hQiqVH0kt942fj4X6lCb8t4LeJVhPp5D8hDzrpg5jJLDkjo1/R3smLjt" />
+    </div>
+    <!-- Your other controls here -->
+
+    <div class="content">
+      <span id="Label1">7.25</span>
+      <span id="Label2">0000</span>
+      <span id="countdown">1:00</span>
+
+      <span id="Label4">30 30 12 5 22</span>
+      <span id="Label5">Take</span>
+      <span id="Label6">Bet OK</span>
+      <span id="Label7">Cancel Bet</span>
+      <span id="Label8">Exit</span>
+      <span id="Label9">0000</span>
+
+      <span id="Label10">Bet Time Over</span>
+
+
+
+      <input type="image" name="ImageButton1" id="ImageButton1"  src="Images/Images-1/Coin1(1).png"
+      onclick="handleClick(event)" />
+
+      <input type="image" name="ImageButton2" id="ImageButton2"  src="Images/Images-1/Coin5(1).png"
+        onclick="handleClick(event)" />
+      <input type="image" name="ImageButton3" id="ImageButton3" class="image-button" src="Images/Images-1/Coin10(1).png"
+        onclick="handleClick(event)" />
+      <input type="image" name="ImageButton4" id="ImageButton4" class="image-button" src="Images/Images-1/Coin50(1).png"
+        onclick="handleClick(event)" />
+      <input type="image" name="ImageButton5" id="ImageButton5" class="image-button"
+        src="Images/Images-1/Coin100(1).png" onclick="handleClick(event)" />
+      <input type="image" name="ImageButton6" id="ImageButton6" class="image-button"
+        src="Images/Images-1/Coin500(1).png" onclick="handleClick(event)" />
+      <input type="image" name="ImageButton7" id="ImageButton7" class="image-button"
+        src="Images/Images-1/Coin1000(1).png" onclick="handleClick(event)" />
+      <input type="image" name="ImageButton8" id="ImageButton8" class="image-button"
+        src="Images/Images-1/Coin5000(1).png" onclick="handleClick(event)" />
+
+
+
+
+
+      <input type="image" name="ImageButton9" id="ImageButton9" class="image-button" src="Images/Images-1/37.jpg" />
+      <input type="image" name="ImageButton10" id="ImageButton10" class="image-button" src="Images/Images-1/0.jpg" />
+      <input type="image" name="ImageButton11" id="ImageButton11" class=" image-button" class="overlay-image" src="Images/Images-1/1.jpg" />
+      <input type="image" name="ImageButton12" id="ImageButton12" class="image-button" src="Images/Images-1/2.jpg" />
+      <input type="image" name="ImageButton13" id="ImageButton13" class="image-button" src="Images/Images-1/3.jpg" />
+      <input type="image" name="ImageButton14" id="ImageButton14" class="image-button" src="Images/Images-1/4.jpg" />
+      <input type="image" name="ImageButton15" id="ImageButton15" class="image-button" src="Images/Images-1/5.jpg" />
+      <input type="image" name="ImageButton16" id="ImageButton16" class="image-button" src="Images/Images-1/6.jpg" />
+
+      <input type="image" name="ImageButton17" id="ImageButton17" class="image-button" src="Images/Images-1/7.jpg" />
+      <input type="image" name="ImageButton18" id="ImageButton18" class="image-button" src="Images/Images-1/8.jpg" />
+      <input type="image" name="ImageButton19" id="ImageButton19" class="image-button" src="Images/Images-1/9.jpg" />
+      <input type="image" name="ImageButton20" id="ImageButton20" class="image-button" src="Images/Images-1/10.jpg" />
+      <input type="image" name="ImageButton21" id="ImageButton21" class="image-button" src="Images/Images-1/11.jpg" />
+      <input type="image" name="ImageButton22" id="ImageButton22" class="image-button" src="Images/Images-1/12.jpg" />
+      <input type="image" name="ImageButton23" id="ImageButton23"   class="image-button" src="Images/Images-1/13.jpg" />
+      <input type="image" name="ImageButton24" id="ImageButton24"  class="image-button" src="Images/Images-1/14.jpg" />
+
+
+      <input type="image" name="ImageButton25" id="ImageButton25"  class="image-button" src="Images/Images-1/15.jpg" />
+      <input type="image" name="ImageButton26" id="ImageButton26"  class="image-button" src="Images/Images-1/16.jpg" />
+      <input type="image" name="ImageButton27" id="ImageButton27"  class="image-button" src="Images/Images-1/17.jpg" />
+      <input type="image" name="ImageButton28" id="ImageButton28"  class="image-button" src="Images/Images-1/18.jpg" />
+      <input type="image" name="ImageButton29" id="ImageButton29"  class="image-button" src="Images/Images-1/19.jpg" />
+      <input type="image" name="ImageButton30" id="ImageButton30"  class="image-button" src="Images/Images-1/20.jpg" />
+      <input type="image" name="ImageButton31" id="ImageButton31"  class="image-button" src="Images/Images-1/21.jpg" />
+      <input type="image" name="ImageButton32" id="ImageButton32"  class="image-button" src="Images/Images-1/22.jpg" />
+
+      <input type="image" name="ImageButton33" id="ImageButton33"  class="image-button" src="Images/Images-1/23.jpg" />
+      <input type="image" name="ImageButton34" id="ImageButton34"  class="image-button" src="Images/Images-1/24.jpg" />
+      <input type="image" name="ImageButton35" id="ImageButton35"   class="image-button" src="Images/Images-1/25.jpg" />
+      <input type="image" name="ImageButton36" id="ImageButton36"   class="image-button" src="Images/Images-1/26.jpg" />
+      <input type="image" name="ImageButton37" id="ImageButton37"  class="image-button"  src="Images/Images-1/27.jpg" />
+      <input type="image" name="ImageButton38" id="ImageButton38"  class="image-button"  src="Images/Images-1/28.jpg" />
+      <input type="image" name="ImageButton39" id="ImageButton39"   class="image-button" src="Images/Images-1/29.jpg" />
+      <input type="image" name="ImageButton40" id="ImageButton40"  class="image-button"  src="Images/Images-1/30.jpg" />
+
+      <input type="image" name="ImageButton41" id="ImageButton41"  class="image-button"  src="Images/Images-1/31.jpg" />
+      <input type="image" name="ImageButton42" id="ImageButton42"  class="image-button"  src="Images/Images-1/32.jpg" />
+      <input type="image" name="ImageButton43" id="ImageButton43"  class="image-button"  src="Images/Images-1/33.jpg" />
+      <input type="image" name="ImageButton44" id="ImageButton44"  class="image-button"  src="Images/Images-1/34.jpg" />
+      <input type="image" name="ImageButton45" id="ImageButton45"  class="image-button"  src="Images/Images-1/35.jpg" />
+      <input type="image" name="ImageButton46" id="ImageButton46"  class="image-button"  src="Images/Images-1/36.jpg" />
+
+      <input type="image" name="ImageButton47" id="ImageButton47" class="image-button" src="Images/Images-1/1st12.jpg" 
+        onclick="handleClick(event)" />
+      <input type="image" name="ImageButton48" id="ImageButton48"  class="image-button"src="Images/Images-1/2nd12.jpg"
+      onclick="handleClick(event)" />
+      <input type="image" name="ImageButton49" id="ImageButton49" class="image-button" src="Images/Images-1/3rd12.jpg" 
+      onclick="handleClick(event)"/>
+      <input type="image" name="ImageButton50" id="ImageButton50"class="image-button" src="Images/Images-1/1-18.jpg"
+      onclick="handleClick(event)" />
+      <input type="image" name="ImageButton51" id="ImageButton51" class="image-button" src="Images/Images-1/even.jpg"
+      onclick="handleClick(event)" />
+
+      <input type="image" name="ImageButton52" id="ImageButton52" class="image-button" src="Images/Images-1/red.jpg"
+      onclick="handleClick(event)" />
+      <input type="image" name="ImageButton53" id="ImageButton53" class="image-button" src="Images/Images-1/black.jpg" 
+      onclick="handleClick(event)"/>
+      <input type="image" name="ImageButton54" id="ImageButton54"class="image-button" src="Images/Images-1/odd.jpg" 
+      onclick="handleClick(event)"/>
+      <input type="image" name="ImageButton55" id="ImageButton55" class="image-button" src="Images/Images-1/19-36.jpg"
+      onclick="handleClick(event)"  />
+
+      <input type="image" name="ImageButton56" id="ImageButton56" src="Images/Images-1/2to1.jpg" />
+      <input type="image" name="ImageButton57" id="ImageButton57" src="Images/Images-1/2to1.jpg" />
+      <input type="image" name="ImageButton58" id="ImageButton58" src="Images/Images-1/2to1.jpg" />
+
+
+
+
+
+
+
+      <img src="Images/Images-1/1.gif" alt="Title GIF" class="title" />
+
+      <img src="Images/wheel_processed.jpg" alt="Spinning Wheel" class="wheel" />
+      <img src="Images/2.gif" alt="Diamond " class="diamond" />
+
+
+
+    </div>
+
+
+
+    </div>
+
+
+
+  </form>
+
+</body>
+
 </html>
