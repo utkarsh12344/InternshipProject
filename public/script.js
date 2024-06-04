@@ -1,26 +1,26 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const startingMinutes = 0.15; // Change this to 1 for 1 minute countdown
-//     let time = startingMinutes * 60;
-  
-//     const countdownEl = document.getElementById('countdown');
-//     const wheelEl = document.querySelector('.wheel');
-//     setInterval(updateCountdown, 1000);
-  
-//     function updateCountdown() {
-//       const minutes = Math.floor(time / 60);
-//       let seconds = time % 60;
-  
-//       countdownEl.innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-//       time--;
-  
-//       if (time < 0) {
-//         clearInterval(updateCountdown);
-//         countdownEl.innerHTML = "Time's up!";
-//         wheelEl.classList.add('rotate-wheel'); // Start spinning the wheel
-//       }
-//     }
-//   });
-  
+document.addEventListener("DOMContentLoaded", function () {
+    const startingMinutes = 1; // Change this to 1 for a 1-minute countdown
+    let time = startingMinutes * 60;
+
+    const countdownEl = document.getElementById('countdown');
+    const wheelVideo = document.getElementById('wheel-video');
+    setInterval(updateCountdown, 1000);
+
+    function updateCountdown() {
+        const minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+
+        countdownEl.innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        time--;
+
+        if (time < 0) {
+            time = startingMinutes * 60; // Reset the timer
+            wheelVideo.play(); // Start playing the video
+        }
+    }
+});
+
+
   
 
 //   //selecting buttons functionality
